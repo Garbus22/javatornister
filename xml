@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Symulator Kostek"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ile kostek chcesz rzucić?"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextDiceNumber"
+            android:hint="Wpisz liczbę"
+            android:inputType="number"
+            android:text="5"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/drawButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rzuć kostkami"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kostki:"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <GridLayout
+            android:id="@+id/gridDices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="1"
+            android:gravity="center"
+            android:useDefaultMargins="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Podsumowanie:"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/textViewResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Brak wyników"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:padding="8dp"/>
+
+        <Button
+            android:id="@+id/buttonUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sortuj rosnąco"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/buttonDown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sortuj malejąco"/>
+
+    </LinearLayout>
+</ScrollView>
